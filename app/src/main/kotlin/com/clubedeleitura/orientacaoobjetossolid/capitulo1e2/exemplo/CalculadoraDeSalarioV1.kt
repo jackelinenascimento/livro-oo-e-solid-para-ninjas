@@ -6,7 +6,9 @@ class CalculadoraDeSalarioV1 {
         return when (funcionario.cargo) {
             CargoV1.DESENVOLVEDOR -> dezOuVintePorcento(funcionario)
             CargoV1.DBA, CargoV1.TESTER -> quinzeOuVinteCincoPorcento(funcionario)
-            else -> throw RuntimeException("funcionario invalido")
+            else -> {
+                throw RuntimeException("funcionario invalido")
+            }
         }
     }
 
