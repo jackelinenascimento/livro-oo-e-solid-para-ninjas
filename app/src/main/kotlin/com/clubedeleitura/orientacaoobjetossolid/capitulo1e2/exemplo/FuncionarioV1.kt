@@ -9,5 +9,7 @@ data class FuncionarioV1(
 enum class CargoV1 {
     DESENVOLVEDOR,
     DBA,
-    TESTER
+    TESTER,
+    QA,
+    GERENTE
 }

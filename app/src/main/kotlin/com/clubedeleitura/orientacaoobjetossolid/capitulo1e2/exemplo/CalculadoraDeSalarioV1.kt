@@ -6,6 +6,8 @@ class CalculadoraDeSalarioV1 {
         return when (funcionario.cargo) {
             CargoV1.DESENVOLVEDOR -> dezOuVintePorcento(funcionario)
             CargoV1.DBA, CargoV1.TESTER -> quinzeOuVinteCincoPorcento(funcionario)
+            CargoV1.QA -> dezOuVintePorcento(funcionario)
+            CargoV1.GERENTE -> trintaPorcento(funcionario)
             else -> {
                 throw RuntimeException("funcionario invalido")
             }
@@ -26,6 +28,10 @@ class CalculadoraDeSalarioV1 {
         } else {
             funcionario.salarioBase * 0.85
         }
+    }
+
+    private fun trintaPorcento(funcionario: FuncionarioV1): Double {
+        return funcionario.salarioBase * 0.7
     }
 
 }
