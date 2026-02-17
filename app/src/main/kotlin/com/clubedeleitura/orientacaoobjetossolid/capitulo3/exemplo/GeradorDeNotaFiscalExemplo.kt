@@ -1,6 +1,6 @@
 package com.clubedeleitura.orientacaoobjetossolid.capitulo3.exemplo
 
-class GeradorDeNotaFiscal(
+class GeradorDeNotaFiscalExemplo(
 
     // Java para Kotlin
     // val comporta-se exatamente como uma private final (imutavel)
@@ -8,13 +8,13 @@ class GeradorDeNotaFiscal(
     // acessa como fosse var direta mas na verdade esta chamando o metodo
     // criado o construtor que recebe esses dois parametros
 
-    private val email: EnviadorDeEmail, //dependencia de classe concreta e instavel
-    private val dao: NotaFiscalDao // dependencia de classe concreta e instavel
+    private val email: EnviadorDeEmailExemplo, //dependencia de classe concreta e instavel
+    private val dao: NotaFiscalDaoExemplo // dependencia de classe concreta e instavel
 ) {
-    fun gera(fatura: Fatura): NotaFiscal {
-        val valor = fatura.valor
+    fun gera(faturaExemplo: FaturaExemplo): NotaFiscalExemplo {
+        val valor = faturaExemplo.valor
 
-        val nf = NotaFiscal(
+        val nf = NotaFiscalExemplo(
             valor = valor,
             imposto = impostoSimplesSobreO(valor)
         )

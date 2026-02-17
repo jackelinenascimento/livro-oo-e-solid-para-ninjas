@@ -3,8 +3,8 @@ package com.clubedeleitura.orientacaoobjetossolid.capitulo3.exemplo
 // DAO - Data Access Object
 // Abstrai e encapsula o acesso ao bd
 
-class NotaFiscalDao {
-    fun persiste(nf: NotaFiscal) {
+class NotaFiscalDaoExemplo {
+    fun persiste(nf: NotaFiscalExemplo) {
         // implementacao para salvar no bd
     }
 }
