@@ -5,6 +5,6 @@ package com.clubedeleitura.orientacaoobjetossolid.capitulo3.exemplo
 
 class NotaFiscalDao {
     fun persiste(nf: NotaFiscal) {
-        // implementacao para salva no bd
+        // implementacao para salvar no bd
     }
 }
