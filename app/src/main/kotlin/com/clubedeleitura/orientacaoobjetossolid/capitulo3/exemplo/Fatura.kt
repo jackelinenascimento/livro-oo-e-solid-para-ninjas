@@ -1,3 +1,3 @@
 package com.clubedeleitura.orientacaoobjetossolid.capitulo3.exemplo
 
-data class Fatura(val valorMensal: Double)
+data class Fatura(val valor: Double)

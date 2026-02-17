@@ -8,9 +8,6 @@ class CalculadoraDeSalarioV1 {
             CargoV1.DBA, CargoV1.TESTER -> quinzeOuVinteCincoPorcento(funcionario)
             CargoV1.QA -> dezOuVintePorcento(funcionario)
             CargoV1.GERENTE -> trintaPorcento(funcionario)
-            else -> {
-                throw RuntimeException("funcionario invalido")
-            }
         }
     }
 

@@ -1,5 +1,7 @@
 package com.clubedeleitura.orientacaoobjetossolid.capitulo3.exemplo
 
 class EnviadorDeEmail {
-    fun enviaEmail(nf: NotaFiscal) {}
+    fun enviaEmail(nf: NotaFiscal) {
+        // implementa o envio de email
+    }
 }
