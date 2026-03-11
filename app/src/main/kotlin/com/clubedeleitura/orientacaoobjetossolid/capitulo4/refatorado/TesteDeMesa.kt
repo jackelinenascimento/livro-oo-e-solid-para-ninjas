@@ -5,18 +5,18 @@ import com.clubedeleitura.orientacaoobjetossolid.capitulo4.exemplo.Compra
 class TesteDeMesa {
 
     fun executar() {
-        val tabela = TabelaPreco2()
+        val tabela = TabelaPreco1()
         val frete = Frete1()
 
         val calculadoraDePrecos = CalculadoraDePrecos(tabela, frete)
 
         val compra = Compra(
-            valor = 2000.0,
+            valor = 5000.0,
             cidade = "Sao Paulo"
         )
 
         val total = calculadoraDePrecos.calcula(compra)
-        println("Total calculado: $total")
+        println("Total compra: ${compra.valor} - Total calculado: $total")
     }
 
     companion object {
